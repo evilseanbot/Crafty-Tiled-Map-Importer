@@ -76,7 +76,7 @@
             }
             return _results;
           })();
-          Crafty.load(tsImages, function() {
+          Crafty.load(tsImages)
             var layer, _i, _j, _len, _len1;
             for (_i = 0, _len = tss.length; _i < _len; _i++) {
               ts = tss[_i];
@@ -88,7 +88,6 @@
             }
             _this.trigger("TiledLevelLoaded", _this);
             return null;
-          });
           return null;
         }
       });
